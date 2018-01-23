@@ -1,10 +1,3 @@
-// A fun sketch to demonstrate the use of the tone() function written by Brett Hagman.
-
-// This plays RTTTL (RingTone Text Transfer Language) songs using the
-// now built-in tone() command in Wiring and Arduino.
-// Written by Brett Hagman
-// http://www.roguerobotics.com/
-
 // To play the output on a small speaker (i.e. 8 Ohms or higher), simply use
 // a 1K Ohm resistor from the output pin to the speaker, and connect the other
 // side of the speaker to ground.
