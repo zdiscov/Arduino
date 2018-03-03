@@ -1,0 +1,26 @@
+How to use the HG7881 (L9110) Dual Channel Motor Driver Module
+This article explains how to use the HG7881 (L9110) Dual Channel Motor Driver Module.
+
+The HG7881 (L9110) is a compact motor driver chip that supports a voltage range from 2.5-12V at 800mA of continuous current. These chips have built-in output clamp diodes to protect your sensitive microcontroller electronics. They are suitable for very small robot projects.
+
+Each HG7881 (L9110) chip is able to drive a single DC motor using two digital control inputs. One input is used to select the motor direction while the other is used to control the motor speed. Speed is controlled by using PWM Pulse Width Modulation. Motor drivers typically have what is called a truth table that determines the effect of its inputs. The truth table for a single HG7881 (L9110) chip is as follows:
+
+HG7881 (L9110) Truth Table
+Input	Output
+IA	IB	OA	IB	Description
+L	L	L	L	Off
+H	L	H	L	Forward
+L	H	L	H	Reverse
+H	H	H	H	Off
+Note that the actual direction of "forward" and "reverse" depends on how the motors are mounted and wired. You can always change the direction of a motor by reversing its wiring.
+
+The HG7881 (L9110) Dual Channel Motor Driver Module uses two of these motor driver chips. Each driver chip is intended to drive one motor, so having two means that this module can control two motors independently. Each motor channel uses the same truth table as above. Each set of screw terminals is used to connect a motor. Refer to the table below for pin header connections.
+
+HG7881 (L9110) Dual Channel Motor Driver Module Connector
+Pin	Description
+B-IA	Motor B Input A (IA)
+B-IB	Motor B Input B (IB)
+GND	Ground
+VCC	Operating Voltage 2.5-12V
+A-IA	Motor A Input A (IA)
+A-IB	Motor A Input B (IB)
