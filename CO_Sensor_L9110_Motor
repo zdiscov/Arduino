@@ -1,0 +1,16 @@
+//http://arduinolearning.com/wp-content/uploads/2015/10/1.jpg
+int INA = 9; 
+int INB = 8;
+ 
+void setup() 
+{ 
+pinMode(INA,OUTPUT); 
+pinMode(INB,OUTPUT); 
+}
+ 
+void loop() 
+{ 
+digitalWrite(INA,LOW);
+digitalWrite(INB,HIGH); 
+delay(1000); 
+}
