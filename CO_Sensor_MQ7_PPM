@@ -1,0 +1,71 @@
+https://github.com/R2D2-2017/R2D2-2017/wiki/MQ-7-gas-sensor
+
+
+For detecting Carbon Monoxide gas the MQ-7 is a good choice. It is cheap and works well. The sensor itself returns a analog voltage that can be converted using an ADC, for more information see this link. The converted value can be used in calculations to get the ppm value of the detected gas. The supply voltage for the sensor is 5 V. The heather on this gas sensor needs a 5 V signal for 60 seconds and then 1.4 v for 90 seconds. During those 90 seconds of lower voltages the analog values can be read. Other technical specifications can be found here along with data for a conversion formula from resistance to gas concentrations. The sensor needs to be wired up in the way specified on this MQ-135 wiring example page. The page is meant for the MQ-135 but it is the same for the MQ-7. An example for a conversion from analog values to ppm values can be found below. The conversion should work for CO (only). The conversion code has not been tested.
+
+Example conversion code
+For calibration with a known concentration you can use the following code. Use this code in clean air (no gasses).
+
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    float sensor_volt;
+    float RS_air; //  Get the value of RS via in a clear air
+    float R0;  // Get the value of R0 via in H2
+    float sensorValue;
+
+    /*--- Get a average data by testing 100 times ---*/
+    //Heather 5v 60 s
+    analogWrite(A1, 1023);
+    delay(60000);
+
+    //Heather 1.4 V 90 s
+    analogWrite(A1, (1023/5)*1.4 );
+    for(int i = 0; i<100; i++){
+        sensorValue = sensorValue + analogRead(A0);
+        delay(900);
+    }
+
+    sensorValue = sensorValue/100.0;
+    /*-----------------------------------------------*/
+
+    sensor_volt = sensorValue/1024*5.0;
+    RS_air = (5.0-sensor_volt)/sensor_volt;
+    R0 = RS_air/(26+(1/3));
+
+    Serial.print("R0 = ");
+    Serial.println(R0);
+    delay(1000);
+}
+The following code can be used to calculate ppm values. The R0 value found by the previous code should be put into the R0 variable in this code.
+
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    float sensor_volt = 0;
+    float RS_gas = 0;
+    float ratio = 0;
+    float sensorValue = 0;
+    float sensor_volt = 0;
+
+
+    //Heather 5v 60 s
+    analogWrite(A1, 1023);
+    delay(60000);
+
+    //Heather 1.4 V 90 s
+    analogWrite(A1, (1023/5)*1.4 );
+    for(int i = 0; i<900; i++){
+        sensorValue = analogRead(A0);
+        int sensor_volt = sensorValue/1024*5.0;
+        RS_gas = (5.0-sensor_volt)/sensor_volt;
+        ratio = RS_gas/R0; //Replace R0 with the value found using the calibration code
+        float ppm = 100 * pow(log10(40)/log10(0,09), ratio)//Formula for co 2 concentration
+        Serial.println(ppm);
+        delay(100);
+    }
+}
