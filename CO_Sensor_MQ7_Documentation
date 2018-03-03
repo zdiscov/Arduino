@@ -1,0 +1,211 @@
+https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-7%20Ver1.3%20-%20Manual.pdf
+
+
+
+
+
+Toxic Gas Sensor
+（Model：MQ-7）
+Manual
+Version: 1.3
+Valid from: 2014-05-01
+Zhengzhou Winsen Electronics Technology Co., Ltd
+
+Statement
+This manual copyright belongs to Zhengzhou Winsen Electronics Technology Co., LTD. Without the
+written permission, any part of this manual shall not be copied, translated, stored in database or
+retrieval system, also can’t spread through electronic, copying, record ways.
+Thanks for purchasing our product. In order to let customers use it better and reduce the faults
+caused by misuse, please read the manual carefully and operate it correctly in accordance with the
+instructions. If users disobey the terms or remove, disassemble, change the components inside of
+the sensor, we shall not be responsible for the loss.
+The specific such as color, appearance, sizes &etc, please in kind prevail.
+We are devoting ourselves to products development and technical innovation, so we reserve the
+right to improve the products without notice. Please confirm it is the valid version before using this
+manual. At the same time, users’ comments on optimized using way are welcome.
+Please keep the manual properly, in order to get help if you have questions during the usage in the
+future.
+Zhengzhou Winsen Electronics Technology CO., LTD
+Zhengzhou Winsen Electronics Technology Co., Ltd www.winsensor.com
+Tel: 86-371-67169097/67169670 Fax: 86-371-60932988 Email: sales@winsensor.com
+MQ-7 Semiconductor Sensor for Carbon Monoxide
+Profile
+Sensitive material of MQ-7 gas sensor is SnO2, which
+with lower conductivity in clean air. It make detection
+by method of cycle high and low temperature, and
+detect CO at low temperature(heated by 1.5V).The
+sensor’s conductivity gets higher along with the CO
+gas concentration rising. At high temperature(heated
+by 5.0V),it cleans the other gases adsorbed at low
+temperature. Users can convert the change of
+conductivity to correspond output signal of gas
+concentration through a simple circuit.
+Features
+It has good sensitivity to carbon monoxide in wide range, and has advantages such as long lifespan, low
+cost and simple drive circuit &etc.
+Main Applications
+It is widely used in domestic CO gas leakage alarm, industrial CO gas alarm and portable CO gas detector.
+Technical Parameters Stable.1
+Model MQ-7
+Sensor Type Semiconductor
+Standard Encapsulation Plastic cap
+Target Gas carbon monoxide
+Detection range 10～500ppm CO
+Standard Circuit
+Conditions
+Loop Voltage Vc ≤10V DC
+Heater Voltage VH
+5.0V±0.1V AC or DC（High tem.）
+1.5V±0.1V AC or DC（Low tem.）
+Heater Time TL
+60 S±1S（High tem.），
+90 S±1S（Low tem.）
+Load Resistance RL Adjustable
+Sensor character
+under standard
+test conditions
+Heater Resistance RH 29Ω±3Ω（room tem.）
+Heater consumption PH ≤900mW
+Sensitivity S Rs(in air)/Rs(in 150ppm CO)≥5
+Output Voltage Vs 2.5V～4.3V (in 150ppm CO)
+Concentration Slope α ≤0.6(R300ppm/R50ppm CO)
+Standard test
+conditions
+Tem. Humidity 20℃±2℃；55%±5%RH
+Standard test circuit
+Vc:5.0V±0.1V；
+VH（High tem.）： 5.0V±0.1V；
+VH （Low tem.）： 1.5V±0.1V
+Preheat time Over 48 hours
+Fig1.Sensor Structure
+Unit: mm
+
+NOTE: Output voltage (Vs) is VRL in test environment.
+Zhengzhou Winsen Electronics Technology Co., Ltd www.winsensor.com
+Tel: 86-371-67169097/67169670 Fax: 86-371-60932988 Email: sales@winsensor.com
+Basic Circuit
+Fig2. MQ-7 Test Circuit
+Instructions: The above fig is the basic test circuit of MQ-7.The sensor requires two voltage inputs: heater
+voltage (VH) and circuit voltage(VC). VH is used to supply standard working temperature to the sensor and it
+can adopt DC or AC power. For this model sensor, VH should be at 1.5V±0.1V low voltage when detect CO
+while should be at 5V±0.1V at non detection status(resuming period). VRL is the voltage of load
+resistance RL which is in series with sensor. Vc supplies the detect voltage to load resistance RL and it
+should adopts DC power.
+Description of Sensor Characters
+Fig4.Typical temperature/humidity characteristics
+The ordinate is resistance ratio of the sensor (Rs/Rso).Rs
+means resistance of sensor in 150ppm CO gas under different
+tem. and humidity. Rso means resistance of the sensor in
+150ppm CO gas under 20℃/55%RH.
+Fig3.Typical Sensitivity Curve
+The ordinate is resistance ratio of the sensor (Rs/R0
+), the
+abscissa is concentration of gases. Rs means resistance in
+target gas with different concentration, R0 means
+resistance of sensor in clean air. All tests are finished
+under standard test conditions.
+CO
+Air
+CH4
+H2
+VH AC or DC
+High voltage and
+low voltage
+can switch
+Zhengzhou Winsen Electronics Technology Co., Ltd www.winsensor.com
+Tel: 86-371-67169097/67169670 Fax: 86-371-60932988 Email: sales@winsensor.com
+
+
+
+
+Cautions
+1 .Following conditions must be prohibited
+1.1 Exposed to organic silicon steam
+Sensing material will lose sensitivity and never recover if the sensor absorbs organic silicon steam.
+Sensors must avoid exposing to silicon bond, fixature, silicon latex, putty or plastic contain silicon
+environment.
+1.2 High Corrosive gas
+If the sensors are exposed to high concentration corrosive gas (such as H2
+S, SOX
+, Cl2, HCl etc.), it will
+not only result in corrosion of sensors structure, also it cause sincere sensitivity attenuation.
+1.3 Alkali, Alkali metals salt, halogen pollution
+The sensors performance will be changed badly if sensors be sprayed polluted by alkali metals salt
+Fig7.long-term Stability
+Test is finished in standard test conditions, the abscissa is observing time and the ordinate is VRL.
+Fig6.Responce and Resume
+Fig5 shows the changing of VRL in the process of putting
+the sensor into target gas and removing it out.
+Fig5.Sensitity Curve
+Fig5 shows the VRL in CO gas with different concentration.
+The resistance load RL
+is 4.7 KΩ and the test is finished in
+standard test conditions.
+Time(s)
+150ppm CO gas (RL=4.7k)
+150ppm CO gas (RL=4.7k)
+Time(day)
+Zhengzhou Winsen Electronics Technology Co., Ltd www.winsensor.com
+Tel: 86-371-67169097/67169670 Fax: 86-371-60932988 Email: sales@winsensor.com
+especially brine, or be exposed to halogen such as fluorine.
+1.4 Touch water
+ Sensitivity of the sensors will be reduced when spattered or dipped in water.
+1.5 Freezing
+ Do avoid icing on sensor’s surface, otherwise sensing material will be broken and lost sensitivity.
+1.6 Applied higher voltage
+Applied voltage on sensor should not be higher than stipulated value, even if the sensor is not
+physically damaged or broken, it causes down-line or heater damaged, and bring on sensors’
+sensitivity characteristic changed badly.
+1.7 Voltage on wrong pins
+For 6 pins sensor, Pin 2&5 is heating electrodes, Pin (1,3)/(4,6) are testing
+electrodes (Pin 1 connects with Pin 3, while Pin 4 connects with Pin 6).If
+apply voltage on Pin 1&3 or 4&6, it will make lead broken; and no signal
+putout if apply on pins 2&4.
+ Fig8. Lead sketch
+2 .Following conditions must be avoided
+2.1 Water Condensation
+Indoor conditions, slight water condensation will influence sensors’ performance lightly. However, if
+water condensation on sensors surface and keep a certain period, sensors’ sensitive will be decreased.
+2.2 Used in high gas concentration
+No matter the sensor is electrified or not, if it is placed in high gas concentration for long time, sensors
+characteristic will be affected. If lighter gas sprays the sensor, it will cause extremely damage.
+2.3 Long time storage
+The sensors resistance will drift reversibly if it’s stored for long time without electrify, this drift is
+related with storage conditions. Sensors should be stored in airproof bag without volatile silicon
+compound. For the sensors with long time storage but no electrify, they need long galvanical aging
+time for stability before using. The suggested aging time as follow:
+Stable2.
+Storage Time Suggested aging time
+Less than one month No less than 48 hours
+1 ~ 6 months No less than 72 hours
+More than six months No less than 168 hours
+2.4 Long time exposed to adverse environment
+No matter the sensors electrified or not, if exposed to adverse environment for long time, such as high
+humidity, high temperature, or high pollution etc., it will influence the sensors’ performance badly.
+2.5 Vibration
+Continual vibration will result in sensors down-lead response then break. In transportation or
+assembling line, pneumatic screwdriver/ultrasonic welding machine can lead this vibration.
+2.6 Concussion
+If sensors meet strong concussion, it may lead its lead wire disconnected.
+2.7 Usage Conditions
+2.7.1For sensor, handmade welding is optimal way. The welding conditions as follow:
+ Soldering flux: Rosin soldering flux contains least chlorine
+Zhengzhou Winsen Electronics Technology Co., Ltd www.winsensor.com
+Tel: 86-371-67169097/67169670 Fax: 86-371-60932988 Email: sales@winsensor.com
+ homothermal soldering iron
+ Temperature： 250℃
+ Time：less than 3 seconds
+2.7.1If users choose wave-soldering, the following conditions should be obey:
+ Soldering flux: Rosin soldering flux contains least chlorine
+ Speed: 1-2 Meter/ Minute
+ Warm-up temperature：100±20℃
+ Welding temperature：250±10℃
+ One time pass wave crest welding machine
+If disobey the above using terms, sensors sensitivity will reduce.
+Zhengzhou Winsen Electronics Technology Co., Ltd
+Add: No.299, Jinsuo Road, National Hi-Tech Zone,
+Zhengzhou 450001 China
+Tel: +86-371-67169097/67169670
+Fax: +86-371-60932988
+E-mail: sales@winsensor.com
+Website: www.winsensor.com
